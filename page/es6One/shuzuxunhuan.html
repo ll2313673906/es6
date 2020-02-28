@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组循环</title>
+
+</head>
+<body>
+<!--<script>-->
+    <!--// foreach循环代替普通的for循环-->
+    <!--let arr = ['apple','banana','orange','tomato'];-->
+    <!--arr.forEach(function (val,index,arr) {-->
+        <!--console.log(this,val,index,...arr);-->
+
+    <!--},123)-->
+<!--</script>-->
+
+<!--<script>-->
+    <!--// map做数据交互，映射，正常情况下，需要配合return，返回是一个新的数组-->
+    <!--// 若果灭有return ，相当于foreach-->
+    <!--// 重新整理数据结构-->
+    <!---->
+   <!--let arr = [-->
+       <!--{title:'aaaa',read:100,hot:true},-->
+       <!--{title:'bbbb',read:100,hot:true},-->
+       <!--{title:'cccc',read:100,hot:true},-->
+       <!--{title:'dddd',read:100,hot:true},-->
+       <!--];-->
+   <!--let newArr = arr.map((item,index,arr)=>{-->
+       <!--console.log(item,index,arr);-->
+       <!--return 1;-->
+
+   <!--});-->
+   <!--console.log(newArr);-->
+<!--</script>-->
+
+
+<script>
+    /**
+     * 过滤一些不合格的元素，若果返回true，就留下来
+     * @type {*[]}
+     */
+    let arr = [
+      {title:'aaaa',read:100,hot:true},
+      {title:'bbbb',read:100,hot:false},
+      {title:'cccc',read:100,hot:true},
+      {title:'dddd',read:100,hot:false},
+
+    ];
+    let newArr = arr.filter((item,index,arr) => {
+       return item.hot === false;
+
+    });
+    console.log(newArr);
+</script>
+
+
+<!--<script>-->
+    <!--/**-->
+     <!--* 类似查找，数组里的摸个元素符合条件就返回true-->
+     <!--* @type {string[]}-->
+     <!--*/-->
+    <!--let arr = ['apple','banana','orange'];-->
+   <!--arr.some((val,index,arr) => {-->
+       <!--return val === 'banana';-->
+    <!--});-->
+
+<!--</script>-->
+
+
+<script>
+    /**
+     * 幂运算符
+     */
+    // 之前：
+    console.log(Math.pow(2,3));
+    // 现在：
+    console.log(2**3);
+
+</script>
+</body>
+</html>

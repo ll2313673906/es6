@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象间接语法以及对象的新增</title>
+    
+</head>
+<body>
+<!--&lt;!&ndash;默认语法&ndash;&gt;-->
+<!--<script>-->
+<!--    let name = 'Strive';-->
+<!--    let age = 19;-->
+<!--    let json = {-->
+<!--        name:name,-->
+<!--        age:age,-->
+<!--        showA:function () {-->
+<!--            return this.name;-->
+
+<!--        }-->
+<!--    }-->
+<!--    console.log(name);-->
+<!--    console.log(json.showA())-->
+
+
+<!--</script>-->
+
+
+
+
+<!--&lt;!&ndash;ES6语法&ndash;&gt;-->
+<!--<script>-->
+<!--    let name = 'apple';-->
+<!--    let age = 19;-->
+<!--    let json = {-->
+<!--        name,-->
+<!--        age,-->
+<!--        showA(){-->
+<!--            return this.name;-->
+<!--        },-->
+<!--        showB(){-->
+<!--            return this.age;-->
+<!--        }-->
+<!--    }-->
+<!--    console.log(json);-->
+<!--    console.log(json.name,json.age);-->
+<!--</script>-->
+
+<!--    判断是否相等-->
+<!--<script>-->
+
+<!--    // 比较两个数是佛相等-->
+<!--    console.log(Number.isNaN(NaN));-->
+
+<!--    let b = Object.is(NaN,NaN);-->
+
+<!--    console.log(b);-->
+<!--    console.log(Object.is('aaa','bbb'));-->
+
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    // Object.assign()用来合并对象-->
+<!--  let json = {a:1};-->
+<!--  let json2 = {b:2,a:2};-->
+<!--  let json3 = {c:3};-->
+<!--   let assign = Object.assign({},json,json2,json3);-->
+<!--   console.log(assign)-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    /**-->
+<!--     * assign用途：-->
+<!--     * 1.合并对象-->
+<!--     * 2.复制数组-->
+<!--     * @type {string[]}-->
+<!--     */-->
+<!--    let strings = ['apple','banana','orange'];-->
+<!--    // 将数组合并到一个新的数组中-->
+<!--    let assign = Object.assign([],strings);-->
+<!--    assign.push('tomato');-->
+<!--    console.log(strings);-->
+<!--    console.log(assign);-->
+<!--</script>-->
+
+
+
+
+
+<!--<script>-->
+<!--    /**-->
+<!--     * key-->
+<!--     * values-->
+<!--     * entries-->
+<!--     * @type {{a: number, b: number, c: number}}-->
+<!--     */-->
+<!--    let json = {-->
+<!--        a:1,-->
+<!--        b:2,-->
+<!--        c:3-->
+<!--    }-->
+<!--    for (let key of Object.entries(json)){-->
+<!--        console.log(key);-->
+<!--    }-->
+<!--</script>-->
+
+
+
+
+
+
+<!--<script>-->
+<!--    let {keys,values,entries} = Object;-->
+<!--    let json = {-->
+<!--        a:1,-->
+<!--        b:2,-->
+<!--        c:3-->
+<!--    }-->
+<!--    for (let key of keys(json)){-->
+<!--        console.log(key)-->
+<!--    }-->
+
+<!--    for (let value of values(json)){-->
+<!--        console.log(value);-->
+<!--    }-->
+<!--    for (let item of entries(json)){-->
+<!--        console.log(item);-->
+<!--    }-->
+<!--    for (let [key,val] of entries(json)){-->
+<!--        console.log(key,val)-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    // 对象扩展运算符-->
+<!--    let json = {a:3,b:4};-->
+<!--    let json2 = {...json};-->
+
+<!--    // 删除-->
+<!--    delete json2.b;-->
+<!--    console.log(json2);-->
+<!--    console.log(json);-->
+<!--</script>-->
+
+
+</body>
+
+</html>

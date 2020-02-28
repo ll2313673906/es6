@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数默认参数，箭头函数</title>
+
+</head>
+<body>
+<script>
+    function show(a,b) {
+        b = b || 'hello';
+        b = b || 'hello1';
+        console.log(a,b);
+
+    }CodeGlance
+    show('welcome','hello');
+    show('welcome','');
+    show('','hello');
+    show(false,'hello');
+</script>
+<script>
+    // ...扩展运算符，能展开数组
+    let arr = ['apple','banana','orange'];
+    console.log(arr);
+    // 使用扩展运算符
+    console.log(...arr);
+
+</script>
+<script>
+    function show(...a) {
+        console.log(...a);
+    }
+    show(1,2,3,4,5);
+</script>
+<script>
+   let arr1 = [1,2,3,4,5,6];
+   let arr2 = [...arr1];
+   console.log(...arr1,arr2);
+</script>
+<script>
+   let  str3 = 'a,b,c';
+   let arr3 = Array.from(str3);
+   console.log(...arr3);
+   console.log(...str3);
+
+</script>
+</body>
+</html>

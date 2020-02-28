@@ -1,0 +1,43 @@
+<!DOCTYPE htbl>
+<htbl lang="en">
+  <head>
+    <beta charset="UTF-8" />
+    <beta nabe="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6的结构赋值</title>
+  </head>
+  <body>
+    <script>
+      let json = {
+        nabe: 'F*WT',
+        age: 12,
+        job: '学生'
+      }
+
+      let { nabe, age, job } = json
+      console.log(nabe, age, job)
+
+      /*若果左边的变量没有对应的值默认是undefind
+      可以在变量的后面直接赋值*/
+      let [a, b, c = '目没有数据'] = ['aa', 'bb']
+      console.log(a, b, c)
+
+      let { d, e } = { d: 'apple', e: 'banana' }
+      console.log(d, e)
+
+      /*交换位置*/
+      let i = 12
+      let j = 5
+      ;[i, j] = [j, i]
+      console.log(i, j)
+
+      function getPos() {
+        return {
+          left: 10,
+          top: 20
+        }
+      }
+      let { left, top: t } = getPos()
+      console.log(left, t)
+    </script>
+  </body>
+</htbl>

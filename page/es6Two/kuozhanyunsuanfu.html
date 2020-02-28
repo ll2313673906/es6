@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展运算符</title>
+<!--    <script>-->
+<!--        window.onload = function () {-->
+<!--            let ali = document.querySelectorAll('ul li');-->
+<!--            console.log(ali);-->
+<!--            // from 将类数组转换为数组-->
+<!--            let arrLi = Array.from(ali);-->
+<!--            arrLi.pop();-->
+<!--            console.log(arrLi);-->
+<!--        }-->
+<!--    </script>-->
+
+
+<!--    <script>-->
+<!--        function show() {-->
+<!--            console.log(arguments);-->
+<!--            // 转换维数组-->
+<!--            let args = Array.from(arguments);-->
+<!--            // 添加一个数组-->
+<!--            args.push(6);-->
+<!--            console.log(args)-->
+
+<!--        }-->
+<!--        show(1,2,3,4,5)-->
+<!--    </script>-->
+
+
+
+<!--    <script>-->
+<!--        // 不能转为数组，打印出数组为空，因为没有Length-->
+<!--        let json = {-->
+<!--            0:'apple',-->
+<!--            1:'banana',-->
+<!--            2:'orange'-->
+<!--        }-->
+<!--        let arr = Array.from(json);-->
+<!--        console.log(arr)-->
+<!--        -->
+<!--    </script>-->
+
+
+
+<!--    <script>-->
+<!--        // 加上length之后把类数组成功打印出数组-->
+<!--        let json = {-->
+<!--            0:'apple',-->
+<!--            1:'banana',-->
+<!--            2:'orange',-->
+<!--            3:'apple',-->
+<!--            length:4-->
+<!--        }-->
+<!--        let arr = Array.from(json);-->
+<!--        console.log(arr);-->
+<!--    </script>-->
+
+
+
+<!--    -->
+<!--    <script>-->
+<!--        // Array.of()把一组值转换成数组-->
+<!--       let arr = Array.of('apple','banana','orange');-->
+<!--        console.log(arr);-->
+<!--    </script>-->
+
+
+<!--    <script>-->
+<!--        // arr.find(),在数组中寻找第一个符合条件的数组成员，若谷没有找到返回undefined，并打印出第一个数-->
+<!--        let arr = [23,300,90,101,80,100];-->
+<!--        let res = arr.find((val,index,arr) => {-->
+<!--            return val>100;-->
+<!--        })-->
+<!--        console.log(res);-->
+
+<!--        // arr.findIndex()找的是数组的位置,，没有找到返回-1-->
+<!--        let res1 = arr.findIndex((val,index,arr) => {-->
+<!--            return val > 100;-->
+<!--        });-->
+<!--        console.log(res1);-->
+<!--        -->
+<!--    </script>-->
+
+
+<!--    <script>-->
+<!--        /**-->
+<!--         * arr.fill()-&#45;&#45;&#45;&#45;填充，共有三个参数-->
+<!--         * arr.fill(填充的东西，开始的位置，结束的位置)-->
+<!--         */-->
+
+<!--        let array = new Array(10);-->
+<!--        // 在原本长度为10 的数组中添加内容-->
+<!--        array.fill('默认值',3,5);-->
+<!--        console.log(array);-->
+
+<!--    </script>-->
+
+
+<!--    <script>-->
+<!--        /**-->
+<!--         * arr.includes()-->
+<!--         * 包含打印true，不包含打印false-->
+<!--         * @type {string[]}-->
+<!--         */-->
+<!--        let strings = ['apple','banana','orange','tomato'];-->
+<!--        let b = strings.includes(`orange`);-->
+<!--        console.log(b);-->
+
+<!--    </script>-->
+
+</head>
+<body>
+<ul>
+    <li>111</li>
+    <li>112</li>
+    <li>113</li>
+    <li>114</li>
+</ul>
+
+</body>
+</html>

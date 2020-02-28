@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://niit-soft.oss-cn-hangzhou.aliyuncs.com/icon/icons8_storage.ico"
+      type="image/x-icon"
+    />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div></div>
+    <script>
+      /* 函数的默认参数 */
+      function show(a, b) {
+        console.log(a, b)
+      }
+      show('Welcome', 'ES6')
+      show('Welecome')
+      /* ------扩展运算符，重置运算符------*/
+      let str = ['apple1', 'banana', 'orange']
+      console.log(str)
+      /*----使用扩展运算符（...）吧数组给展开来------*/
+      console.log(...str)
+
+      /*----重置运算符-----*/
+      function show(...a) {
+        console.log(a)
+      }
+      show(1, 2, 3, 4, 5)
+    </script>
+  </body>
+</html>
